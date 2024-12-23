@@ -7,7 +7,9 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    darkMode: 'media',
     extend: {
+      
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
