@@ -13,8 +13,8 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas:
 
 1. Clona este repositorio en tu máquina local:
 ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd <NOMBRE_DEL_PROYECTO>
+   git clone https://github.com/DianaAraujoG/next-dashboard.git
+   cd next-dashboard
 ```
 2. Instala las dependencias del proyecto:
 ```bash
