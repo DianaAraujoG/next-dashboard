@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Dasboard del Clima
 
-First, run the development server:
+Este proyecto esta diseñado para mostrar el pronóstico del tiempo en función de datos con sultados del API OpenWeather. Incluye características como filtrado por horario y tipo de clima, el clima del estado y la calidad del aire. 
 
+## 📋 Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalados los siguientes programas:
+- Node.js (versión 16 o superior recomendada)
+- npm como gestor de paquetes
+
+## 🚀 Instalación
+
+1. Clona este repositorio en tu máquina local:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   git clone <URL_DEL_REPOSITORIO>
+   cd <NOMBRE_DEL_PROYECTO>
+```
+2. Instala las dependencias del proyecto:
+```bash
+   npm install
+ ```
+## 💻 Ejecución del Proyecto Localmente
+Para correr el proyecto en un entorno de desarrollo, ejecuta:
+```bash
+    npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esto iniciará un servidor de desarrollo en http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Correr Pruebas
+El proyecto utiliza Jest para pruebas unitarias. Para ejecutar las pruebas, usa el siguiente comando:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+    npm run test
+```
+## 🛠️ Decisiones Técnicas
+Este proyecto se diseñó teniendo en cuenta la simplicidad, el rendimiento y la escalabilidad:
 
-## Learn More
+- **React y Next.js**: Renderizado del lado del servidor (SSR) para mejor rendimiento y SEO.
+- **TypeScript**: Tipado estático para un código más seguro y mantenible.
+- **Day.js**: Biblioteca ligera para formatear fechas.
+- **Jest**: Pruebas unitarias confiables para evitar regresiones.
+- **TailwindCSS**: Estilos rápidos, responsivos y consistentes.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Estructura del Proyecto
+- `src/app/ui/Cards/PredictionCard`: Componente principal del pronóstico.
+- `src/app/constants`: Constantes reutilizables (ej. descripciones del clima).
+- `src/test`: Pruebas unitarias del componente.
